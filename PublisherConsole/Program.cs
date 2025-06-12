@@ -14,7 +14,25 @@ internal class Program
     {
         using var context = new BloggingContext();
 
-        var result = context.Students.ToList();
+
+     //   context.Add(new Cat
+        //{
+        //    Breed = "Siamese",
+        //    EducationalLevel = "High School"
+        //});
+
+        //context.Add(new Dog
+        //{
+        //    Breed = "Labrador",
+        //    FavoriteToy = "Rubber Bone"
+        //});
+
+        //await context.SaveChangesAsync();
+
+
+        var result = context.Cats.ToList();
+
+
         //var blogs = await context.Blogs
         // .OrderByDescending(blog => blog.Rating)
         // .Select(
